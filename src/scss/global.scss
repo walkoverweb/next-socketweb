@@ -1,0 +1,30 @@
+body {
+    background-color: #151F20!important;
+    color: white;
+}
+
+//reset
+a{
+    text-decoration: none!important;
+    cursor: pointer;
+}
+ul{
+    padding: 0!important;
+    margin: 0!important;
+}
+
+
+
+//navbar
+.navmenu{
+    ul{
+        li{
+            a{
+                color: white;
+                &:hover{
+                    color: rgb(193, 193, 255);
+                }
+            }
+        }
+    }
+}
