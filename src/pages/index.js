@@ -1,8 +1,8 @@
 import Embed from "@/components/embed";
 const Index = () => (
-<>
-<Embed/>
-</>
+  <>
+    <Embed />
+  </>
 );
 
 export default Index;

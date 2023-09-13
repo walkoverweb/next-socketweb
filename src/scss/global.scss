@@ -1,30 +1,57 @@
+@import "import";
+
 body {
-    background-color: #151F20!important;
-    color: white;
+  background-color: #151f20 !important;
+  color: white;
+  font-family: "Open Sans", sans-serif !important;
 }
 
 //reset
-a{
-    text-decoration: none!important;
-    cursor: pointer;
+a {
+  text-decoration: none !important;
+  cursor: pointer;
 }
-ul{
-    padding: 0!important;
-    margin: 0!important;
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
 }
-
-
+.btn {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  border-radius: 4px !important;
+  padding: 8px 16px !important;
+}
+.btn-primary {
+  background-color: white !important;
+  border: none !important;
+  color: black !important;
+  &:hover {
+    background-color: rgb(235, 235, 235) !important;
+  }
+}
+.btn-primary-outline {
+  background-color: none !important;
+  border: 1px solid white !important;
+  color: white !important;
+  &:hover {
+    background-color: rgb(235, 235, 235) !important;
+    color: black !important;
+  }
+}
 
 //navbar
-.navmenu{
-    ul{
-        li{
-            a{
-                color: white;
-                &:hover{
-                    color: rgb(193, 193, 255);
-                }
-            }
+.navmenu {
+  ul {
+    li {
+      a {
+        color: white;
+        &:hover {
+          color: rgb(193, 193, 255);
         }
+        &.active-menu-link {
+          border-bottom: 1px solid white !important;
+        }
+      }
     }
+  }
 }

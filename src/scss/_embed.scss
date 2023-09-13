@@ -1,0 +1,25 @@
+.embed-hero {
+  height: 90vh;
+  gap: 30px;
+  div {
+    button {
+      font-size: 20px;
+    }
+  }
+}
+.feature-cont {
+  height: 100vh;
+
+  .feature-sec {
+    ul {
+      li {
+        color: white !important;
+      }
+    }
+  }
+  .feature-main-img {
+    position: relative;
+    right: 0;
+    top: inherit;
+  }
+}
