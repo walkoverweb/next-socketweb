@@ -1,9 +1,24 @@
 @import "import";
 
 body {
-  background-color: #151f20 !important;
+  // background-color: #151f20 !important;
   color: white;
   font-family: "Open Sans", sans-serif !important;
+  background: linear-gradient(-70deg, #000E14, #280029, #0E0531, #1A0000);
+	background-size: 400% 400%;
+	animation: gradientbg 20s ease infinite;
+	height: 100vh;
+}
+@keyframes gradientbg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 //reset
@@ -18,7 +33,7 @@ ul {
 .btn {
   font-size: 20px !important;
   font-weight: 500 !important;
-  border-radius: 4px !important;
+  border-radius: 2px !important;
   padding: 8px 16px !important;
 }
 .btn-primary {
@@ -42,6 +57,7 @@ ul {
 //navbar
 .navmenu {
   ul {
+    list-style: none !important;
     li {
       a {
         color: white;
@@ -55,3 +71,12 @@ ul {
     }
   }
 }
+
+.text-link{
+  color: #3f60f3!important;
+  &:hover{
+  text-decoration: underline;
+
+  }
+}
+
