@@ -11,13 +11,13 @@ const Navbar = () => {
                 Embed
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#" className="tabitems-nav px-1">
                 Table
               </a>
-            </li>
+            </li> */}
             <li>
-              <a href="#" className="tabitems-nav px-1">
+              <a href="https://flow.viasocket.com/" className="tabitems-nav px-1">
                 Flow
               </a>
             </li>
