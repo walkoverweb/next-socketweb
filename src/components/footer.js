@@ -3,6 +3,12 @@ const Footer = () => {
     <>
       <div className="container footer">
         <ul className="d-flex w-100 gap-3 justify-content-end">
+          <li className="d-flex align-items-center pe-2">
+            <span>
+             Copyright 2023 &copy;
+            </span>
+            <a className="text-decoration-underline ms-1" href="https://walkover.in/">Walkover</a>
+          </li>
           <li>
             <a href="https://walkover.in/">About</a>
           </li>
