@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Head from "@/components/head";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
+import Footer from "@/components/footer";
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -17,6 +18,8 @@ export default function MyApp({ Component, pageProps }) {
       <Head />
       {showNavbar && <Navbar />}
       <Component {...pageProps} />
+      {showNavbar && <Footer />}
+
     </>
   );
 }
