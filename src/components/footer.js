@@ -10,7 +10,7 @@ const Footer = () => {
             <a href="/terms">T&C</a>
           </li>
           <li>
-            <a href="/about">Privacy Policy</a>
+            <a href="/privacy">Privacy Policy</a>
           </li>
           <li>
             <a href="https://calendly.com/rpaliwal71/15-mins">Contact Us</a>
