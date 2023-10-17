@@ -3,23 +3,23 @@ const Footer = () => {
     <>
       <div className="container footer">
         <ul className="d-flex w-100 gap-3 justify-content-end">
-          <li className="d-flex align-items-center pe-2">
+          <li className="d-flex align-items-center pe-2 copyright">
             <span>
              Copyright 2023 &copy;
             </span>
-            <a className="text-decoration-underline ms-1" href="https://walkover.in/">Walkover</a>
+            <a className="text-decoration-underline ms-1" href="https://walkover.in/" target="_blank">Walkover</a>
           </li>
           <li>
-            <a href="https://walkover.in/">About</a>
+            <a href="https://walkover.in/" target="_blank">About</a>
           </li>
           <li>
-            <a href="/terms">T&C</a>
+            <a href="/terms" target="_blank">T&C</a>
           </li>
           <li>
-            <a href="/privacy">Privacy Policy</a>
+            <a href="/privacy" target="_blank">Privacy Policy</a>
           </li>
           <li>
-            <a href="https://calendly.com/rpaliwal71/15-mins">Contact Us</a>
+            <a href="https://calendly.com/rpaliwal71/15-mins" target="_blank">Contact Us</a>
           </li>
         </ul>
       </div>

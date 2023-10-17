@@ -1,4 +1,35 @@
 const Login = () => {
+  function MyComponent() {
+      const configuration = {
+        referenceId: '870623m1696579096651fbe18d4458',
+        success: (data) => {
+          // get verified token in response
+          console.log('success response', data)
+        },
+        failure: (error) => {
+          // handle error
+          console.log('failure reason', error)
+        }
+      }
+      const script = document.createElement('script')
+      script.type = 'text/javascript'
+      script.onload = () => {
+        const checkInitVerification = setInterval(() => {
+          if (typeof initVerification === 'function') {
+            clearInterval(checkInitVerification)
+            // eslint-disable-next-line no-undef
+            initVerification(configuration)
+          }
+        }, 100)
+      }
+      script.src = 'https://proxy.msg91.com/assets/proxy-auth/proxy-auth.js?time=34093049'
+      document.body.appendChild(script)
+      return () => {
+        // Cleanup code if needed
+        document.body.removeChild(script)
+      }
+  }
+  
   return (
     <>
       <div className="login d-flex gap-sm-0 gap-4 flex-column flex-sm-row-reverse">
@@ -7,10 +38,16 @@ const Login = () => {
           <div className="login__main__loginbtn pt-4 pt-sm-0">
           <img src="/img/mainlogo-dark.svg" alt="Via-Socket-logo" className="mobile-main-logo mb-3 d-block d-sm-none" />
             <h2 className="t-dark">Welcome Back!</h2>
-            <button className="google-auth-btn   px-3 py-2  d-flex align-items-center gap-2">
+            <a href="https://flow.viasocket.com/">
+            <button 
+            className="google-auth-btn   px-3 py-2  d-flex align-items-center gap-2" 
+            // onClick={()=>MyComponent()}
+            
+            >
               <img src="/img/google-logo.svg" />
               Login WIth Google
             </button>
+              </a>
           </div>
           <div className="login__main__newac mt-5">
             <h2 className="t-dark">OR</h2>
