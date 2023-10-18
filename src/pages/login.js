@@ -6,7 +6,7 @@ const Login = () => {
           // get verified token in response
           console.log('success response', data)
         },
-        failure: (error) => {
+        failure: (error) => {z
           // handle error
           console.log('failure reason', error)
         }
@@ -41,7 +41,7 @@ const Login = () => {
             <a href="https://flow.viasocket.com/">
             <button 
             className="google-auth-btn   px-3 py-2  d-flex align-items-center gap-2" 
-            // onClick={()=>MyComponent()}
+            onClick={()=>MyComponent()}
             
             >
               <img src="/img/google-logo.svg" />
