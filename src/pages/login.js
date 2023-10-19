@@ -1,7 +1,7 @@
 const Login = () => {
   function MyComponent() {
       const configuration = {
-        referenceId: '870623m1696579096651fbe18d4458',
+        referenceId: process.env. NEXT_PUBLIC_REFERENCE_ID,
         success: (data) => {
           // get verified token in response
           console.log('success response', data)
@@ -38,7 +38,6 @@ const Login = () => {
           <div className="login__main__loginbtn pt-4 pt-sm-0">
           <img src="/img/mainlogo-dark.svg" alt="Via-Socket-logo" className="mobile-main-logo mb-3 d-block d-sm-none" />
             <h2 className="t-dark">Welcome Back!</h2>
-            <a href="https://flow.viasocket.com/">
             <button 
             className="google-auth-btn   px-3 py-2  d-flex align-items-center gap-2" 
             onClick={()=>MyComponent()}
@@ -47,7 +46,7 @@ const Login = () => {
               <img src="/img/google-logo.svg" />
               Login WIth Google
             </button>
-              </a>
+   
           </div>
           <div className="login__main__newac mt-5">
             <h2 className="t-dark">OR</h2>
