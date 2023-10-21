@@ -1,16 +1,26 @@
 :root {
     --col-dark: #222222;
     --col-white:#ffff;
-
     --col-h-white:#e9e9e9;
+    --bs-heading-color:var(--col-white)!important;
+    --col-dark-lite:#a0a0a0!important;
 
 
-
+    //utilities
     --u-base:2px;
 
-    --fs-base:18px;
+
+    //font
+    --font-base:16px;
 
 
+    --head-base:var(--font-base);
+    
+    --body-base:var(--font-base);
+
+
+
+    //height
     --nav-height :30px
 
 

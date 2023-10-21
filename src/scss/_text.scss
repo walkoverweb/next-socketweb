@@ -5,7 +5,7 @@ h4,
 h5,
 span,
 p {
-  color: white !important;
+  color: white;
 }
 h1,
 h2 {
@@ -25,3 +25,22 @@ h3 {
 .t-dark{
   color: var(--col-dark)!important;
 }
+.t-lite{
+  color:var(--col-dark-lite)!important;
+}
+
+//fontsize
+.head-sm{
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.head-base{
+  font-size: var(--head-base);
+}
+.body-base{
+  font-size: var(--body-base);
+}
+
+

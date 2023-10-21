@@ -23,3 +23,15 @@
     top: inherit;
   }
 }
+.feature{
+  background-color: rgba(255, 255, 255, 0.03);;
+  &__img{
+    img{
+      height:270px ;
+      width: auto;
+    }
+  }
+}
+.embed-features{
+  margin: 90px 0px;
+}
