@@ -42,11 +42,10 @@ const Embed = () => {
               </div>
               <div className="feature__content d-grid gap-1">
                 <h4 className="feature__content__heading head-base">
-                  Implement out code
+                Style it to match your product’s branding
                 </h4>
                 <p className="feature__heading__body body-base t-lite">
-                  Set up triggers for app events or specific times to fetch data
-                  across your app stack
+                Override our design system styles without forking the codebase
                 </p>
               </div>
             </div>
@@ -56,11 +55,10 @@ const Embed = () => {
               </div>
               <div className="feature__content d-grid gap-1">
                 <h4 className="feature__content__heading head-base">
-                  Implement out code
+                Allow users to create automated workflows
                 </h4>
                 <p className="feature__heading__body body-base t-lite">
-                  Set up triggers for app events or specific times to fetch data
-                  across your app stack
+                User management + separate user data
                 </p>
               </div>
             </div>
