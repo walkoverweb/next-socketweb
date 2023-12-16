@@ -44,7 +44,7 @@ export default function TestPage({ source, title, date, author, tags }) {
       <div className="wrapper container blog-container">
         <a
           className="mb-3 d-inline-block btn blog-container__back-btn"
-          href="javascript:void(0)"
+          href="#"
           onClick={handleClick}
         >
           <MdKeyboardArrowLeft /> Back
