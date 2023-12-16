@@ -1,0 +1,30 @@
+.navbar-cont{
+    top: 10px;
+    position: fixed;
+    width: 100vw;
+    .nav{
+        &__logo{
+            height: 36px;
+        }
+        border: 1px solid var(--col-nav-border);
+        border-radius: 4px;
+        padding: 12px;
+        background-color: var(--col-nav-bg);
+        backdrop-filter:  blur(30px);
+        &__menu{
+            ul{
+                li{
+                    a{
+                        color: var(--col-white)!important;
+                        &:hover{
+                        color: var(--col-white)!important;
+                        text-decoration: underline!important;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
