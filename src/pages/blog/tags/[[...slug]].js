@@ -13,7 +13,7 @@ export default function Index({ posts, tag, pagination, page }) {
  const handleClick = () =>{
    router.back();
  }
-  const url = `/blog/tags/${tag}` + (page ? `/${page}` : "");
+
 //   const title = tag.name; 
   return (
       <>
