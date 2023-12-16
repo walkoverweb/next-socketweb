@@ -1,20 +1,21 @@
 .embed{
-  min-height: 86vh!important;
+  min-height: 83vh!important;
 }
 .tagnile-automation {
   border-radius: 0px 8px 8px 0px;
 background: linear-gradient(91deg, #F6D0FF 21.95%, #9896FF 74.05%);
 }
 .embed__hero__cont{
-  height: 86vh!important;
+  height: 83vh!important;
 
 }
 .embed__hero__img{
-  height: 86vh!important;
-  position: relative;
+  height: 83vh!important;
+  // position: relative;
   .hero-img{
     position: absolute;
-    top: 50px;
+    top: 200px;
+    right: 0px;
     height: 600px;
   }
 }

@@ -1,9 +1,9 @@
 const Embed = () => {
   return (
     <>
-      <div className="embed container d-flex align-items-center">
-        <div className="embed__hero h-100 d-flex w-100">
-          <div className="embed__hero__cont col-8  d-flex flex-column gap-5 justify-content-center">
+      <div className="embed  d-flex ">
+        <div className="embed__hero container h-100 d-flex w-100">
+          <div className="embed__hero__cont  col-8 d-flex flex-column gap-5 justify-content-center">
             <div className="embed-hero-cont__heading">
               <h1>The most advance</h1>
               <h1>
@@ -17,7 +17,7 @@ const Embed = () => {
             </h3>
             <div className="embed-hero-cont__btn d-flex align-items-center gap-3">
               <button className="btn btn-light">Try for FREE</button>
-              <a className="text-link">Compare with other tools</a>
+              <a className="text-white">Compare with other tools</a>
             </div>
           </div>
           <div className="embed__hero__img ">
@@ -25,6 +25,7 @@ const Embed = () => {
           </div>
         </div>
       </div>
+      
     </>
   );
 };
