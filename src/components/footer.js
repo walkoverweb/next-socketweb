@@ -10,7 +10,7 @@ const Footer = () => {
             <a className="text-decoration-underline ms-1" href="https://walkover.in/" target="_blank">Walkover</a>
           </li>
           <li>
-            <a href="https://walkover.in/" target="_blank">About</a>
+            <a href="https://walkover.in" target="_blank">About</a>
           </li>
           <li>
             <a href="/terms" target="_blank">T&C</a>
