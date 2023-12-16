@@ -17,7 +17,10 @@ module.exports = {
 
   // Can be safely removed in newer versions of Next.js
   
-
+    images: {
+      loader: 'akamai',
+      path: '',
+    },
   webpack(config) {
     config.resolve.fallback = {
 
