@@ -5,42 +5,57 @@ h4,
 h5,
 span,
 p {
-  color: white;
+  color: white !important;
 }
-h1,
-h2 {
-    font-family: 'Rajdhani', sans-serif!important;
+
+// font family
+
+h1,h2,h3,h4,h5,h6,span,p {
+  font-family: 'Open Sans', sans-serif!important;
 }
+
 // fontsize
-
 h1 {
-  font-size: 56px !important;
+  font-size: var(--fontsize-h1) !important;
 }
+h2 {
+  font-size: var(--fontsize-h2) !important;
+}
+
 h3 {
-  font-size: 36px !important;
-  font-weight: 400 !important;
+  font-size: var(--fontsize-h3) !important;
 }
 
-//fontcolor
-.t-dark{
-  color: var(--col-dark)!important;
-}
-.t-lite{
-  color:var(--col-dark-lite)!important;
+h4 {
+  font-size: var(--fontsize-h4) !important;
 }
 
-//fontsize
-.head-sm{
-  font-size: 16px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.head-base{
-  font-size: var(--head-base);
-}
-.body-base{
-  font-size: var(--body-base);
+h5 {
+  font-size: var(--fontsize-h5) !important;
 }
 
+.base {
+  font-size: var(--fontsize-base) !important;
+}
 
+.base1 {
+  font-size: var(--fontsize-base1) !important;
+}
+
+.base2 {
+  font-size: var(--fontsize-base2) !important;
+}
+
+.base3 {
+  font-size: var(--fontsize-base3) !important;
+}
+
+.text-white{
+  color: var(--col-white) !important;
+}
+.text-link{
+  color: var(--col-link)!important;
+  &:hover{
+    text-decoration: underline!important;
+  }
+}

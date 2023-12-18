@@ -1,10 +1,8 @@
 @import "import";
 
 body {
-  // background-color: #151f20 !important;
-  color: var(--col-white);
   font-family: "Open Sans", sans-serif !important;
-  background: linear-gradient(-70deg, #000E14, #280029, #0E0531, #1A0000);
+  background: linear-gradient(-70deg, #000000, #062004,  #000000, #062004);
 	background-size: 400% 400%;
 	animation: gradientbg 20s ease infinite;
 	height: 100vh;
@@ -21,67 +19,7 @@ body {
 	}
 }
 
-//reset
-a {
-  text-decoration: none !important;
-  cursor: pointer;
+.nav-padding{
+  padding-top: 100px;
 }
-ul {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-//navbar
-.navmenu,.footer {
-  ul {
-    list-style: none !important;
-    li {
-      a {
-        color: var(--col-white);
-        &:hover {
-          color: rgb(193, 193, 255);
-        }
-        &.active-menu-link {
-          border-bottom: 1px solid var(--col-white) !important;
-        }
-      }
-    }
-  }
-}
-
-.text-link{
-  color: #3f60f3!important;
-  &:hover{
-  text-decoration: underline;
-
-  }
-}
-
-//footer
-.footer{
-  height: var(--nav-height);
-}
-
-//hero
-.tag-title{
-  font-size: 20px;
-  letter-spacing: 2px;
-  opacity: 0.8;
-}
-
-
-.copyright{
-  opacity: 0.5;
-}
-//
-body {
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll; 
-}
-
-body::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
-}
-
 
