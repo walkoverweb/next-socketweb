@@ -1,0 +1,26 @@
+.login{
+    &__main{
+        &__loginbtn{
+            img{
+                width: 200px;
+            }
+        }
+
+    }
+    &__details{
+        height: 100vh;
+        background-color: rgba(192, 192, 192, 0.07);
+        img{
+            width: 200px;
+        }
+        .feature-list{
+
+            li{
+                color: var(--col-white);
+                margin-top: 12px;
+                font-weight: 200!important;
+            }
+        }
+
+    }
+}
