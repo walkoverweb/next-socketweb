@@ -57,7 +57,7 @@ const Login = () => {
             className="d-none d-sm-block "
           />
           <h3 className="mt-4">
-            Unlock the Power of Seamless Backend Management
+            Upgrade yout team with powerful automation tool
           </h3>
           <ul className="feature-list mt-3">
             <li>Backend Management Made Simple</li>
