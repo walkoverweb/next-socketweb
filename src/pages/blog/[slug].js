@@ -43,7 +43,7 @@ export default function TestPage({ source, title, date, author, tags }) {
       </Head>
       <div className="wrapper container blog-container">
         <a
-          className="mb-3 d-inline-block btn blog-container__back-btn"
+          className="mt-3 mb-3 d-inline-block btn blog-container__back-btn"
           href="#"
           onClick={handleClick}
         >
