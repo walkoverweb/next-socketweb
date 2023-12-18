@@ -33,10 +33,10 @@ const Login = () => {
   return (
     <>
       <div className="login d-flex gap-sm-0 gap-4 flex-column flex-sm-row-reverse">
-        <div className="login__main  col-12 col-sm-6 col-md-7 col-lg-8 col-xl9 p-2 p-sm-4 p-xl-5 ">
+        <div className="login__main  col-12 col-sm-6 col-md-7 col-lg-8 col-xl-9 p-2 p-sm-4 p-xl-5 ">
           <div className="login__main__loginbtn pt-4 pt-sm-0">
             <img
-              src="/img/mainlogo-dark.svg"
+              src="/img/mainlogo.svg"
               alt="Via-Socket-logo"
               className="mobile-main-logo mb-3 d-block d-sm-none"
             />
@@ -50,15 +50,15 @@ const Login = () => {
             </a>
           </div>
         </div>
-        <div className="login__details  col-xl-3 col-lg-4 col-md-5 col-sm-6 col-12 p-2 p-sm-4 p-xl-5">
+        <div className="login__details d-flex flex-column gap-2 col-xl-3 col-lg-4 col-md-5 col-sm-6 col-12 p-2 p-sm-4 p-xl-5">
           <img
             src="/img/mainlogo.svg"
             alt="Via-Socket-logo"
-            className="d-none d-sm-block"
+            className="d-none d-sm-block "
           />
-          <h4 className="mt-4">
+          <h3 className="mt-4">
             Unlock the Power of Seamless Backend Management
-          </h4>
+          </h3>
           <ul className="feature-list mt-3">
             <li>Backend Management Made Simple</li>
             <li>Create Flows with Ease</li>
