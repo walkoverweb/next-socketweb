@@ -39,7 +39,7 @@ export default function TestPage({ source, title, date, author, tags }) {
     <>
       <Head>
         <title>{title}</title>
-        <meta property="og:title" content={`Explore the world of ${title} Through our blog and stay informed about the latest developments, expert insights, and valuable tips that matter most. visit at GIDHH -The Best Accounting Software`} key="title" />
+        {/* <meta property="og:title" content={`Explore the world of ${title} Through our blog and stay informed about the latest developments, expert insights, and valuable tips that matter most. visit at GIDHH -The Best Accounting Software`} key="title" /> */}
       </Head>
       <div className="wrapper container blog-container">
         <a
