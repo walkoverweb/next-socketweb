@@ -26,10 +26,11 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="nav__buttons d-flex align-items-center gap-3">
-            <button className="btn btn-sm btn-light">Try for FREE</button>
-            <a href="/login" className="text-link px-1">
-              Login
-            </a>
+          <button type="button" class="btn btn-light">Try for FREE</button>
+            
+            <button type="button" class="  btn btn-outline-light">login</button>
+              
+            
           </div>
         </div>
       </div>
