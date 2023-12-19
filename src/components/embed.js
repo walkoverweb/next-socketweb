@@ -14,13 +14,13 @@ const Embed = () => {
               Connect 100+ apps or webhook to collect data, drag-and-drop
               functionality or write custom code using AI
             </h3> */}
-            <div className="embed-hero-cont__btn d-flex align-items-center gap-3 py-3">
+            <div className="embed-hero-cont__btn d-flex align-items-center gap-3 my-3">
               <button className="btn btn-light">Try for FREE</button>
               <a className="text-white">Compare with other tools</a>
             </div>
           </div>
-          <div className="embed__hero__img w-100">
-            <img className="hero-img  " width="100%" src="/img/main.svg" />
+          <div className="embed__hero__img mt-4">
+            <img className="img-fluid" width="100%" src="/img/main.svg" />
           </div>
         </div>
       </div>

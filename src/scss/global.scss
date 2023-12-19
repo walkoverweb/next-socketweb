@@ -1,12 +1,26 @@
 @import "import";
 
 body {
-  font-family: "Open Sans", sans-serif !important;
-  background: linear-gradient(-70deg, #000000, #062004);
+	font-family: "Open Sans", sans-serif !important;
+	background: linear-gradient(-70deg, #000000, #062004);
 	background-size: 400% 400%;
 	animation: gradientbg 20s ease infinite;
 	height: 100vh;
+
+	&::-webkit-scrollbar {
+		width: 7px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: var(--col-black);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: var( --col-white);
+		border-radius: 3px;
+	}
 }
+
 @keyframes gradientbg {
 	0% {
 		background-position: 0% 50%;
@@ -19,7 +33,6 @@ body {
 	}
 }
 
-.nav-padding{
-  padding-top: 100px;
+.nav-padding {
+	padding-top: 100px;
 }
-
