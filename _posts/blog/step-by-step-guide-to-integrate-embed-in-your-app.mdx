@@ -1,0 +1,62 @@
+---
+title: Step by step guide to integrate Embed in your app
+slug: step-by-step-guide-to-integrate-embed-in-your-app
+date: 2023-12-20T12:09:55.092Z
+author: Team viaSocket
+tag:
+  - via-socket
+thumbnail: /uploads/pexels-lukas-574069.jpg
+description: Go to Embed option from somewhere, you will not find it easily
+  since this is an advanced feature.Create a dedicated project for each purpose
+  or service. For example, MSG91 has multiple services like Hello, Campaign, CDP
+---
+**Create a Project**
+
+Create a dedicated project for each purpose or service. For example, [MSG91](https://msg91.com/) has multiple services like Hello, Campaign, CDP, ChatBot so they created 4 projects for each of them because they want Embed to behave differently in their each service.
+
+
+
+## **Create a Template**
+
+Templates are used to create flow by your user in your app. You have advanced options in configuration like
+
+Only predefined templates can be used to create flow.
+
+User can create a blank flow.
+
+User can edit flow or not.
+
+and more.\
+\
+Create JWT token, Copy and paste code in your app and pass generated JWT token in the code
+
+* Incorporate the provided SDK into your application's HTML file. By invoking the **openViasocketIframe()** function, viasocket will seamlessly integrate into your application. 
+* To authenticate the user, you need to pass the **JWT(HS256)** token while invoking the openViasocketIframe() function inside the object with "embedToken" key shown in the above image. 
+* ​*[How to create JWT token](https://viasocket.com/faq/create-jwt-token)*?
+* You can also pass the flow-id and template-id for custom configuration, [Follow this](https://viasocket.com/faq/custom-parameters-in-embed-sdk)\
+  <https://viasocket.com/faq/integration-slider-config>\
+  \
+  Template Setting
+
+  Using template setting you can make a template editable and partially editable.
+
+  ![](https://phone91.com/static/Viasocket/Kb1702035902687494Screenshot_2023-12-08_at_51449_PM.png)
+
+  * Editable : This mode will allow user to add or delete steps.
+  * Partially Editable : This mode will restrict the user to add and delete step from the copied flow.
+
+
+
+  ### Passing information from Viasocket-iFrame to Parent window.
+
+  Using the **window.addEventListener('message')**, shown in the above SDK image, you can get the valuable information about a particular flow when any action is performed by the user in the below format.
+
+  * "**action**" will show the status about a flow.
+
+    1. "initiated" : This will show if the flow is created for the first time or has not been published yet.
+    2. "published" : This action will tell user that the flow has been published.
+    3. "deleted" : This is for when the flow gets deleted.
+  * "**description**" will tell us about what this flow does.
+  * "**id**" is a unique flow identifier.
+  * "**webhookurl**" is flow invocation URL.
+  * "**payload**" : It consist the payload which is used to hit the webhookurl of flow.
