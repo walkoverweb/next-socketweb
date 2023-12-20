@@ -1,54 +1,26 @@
-.login {
-  height: 100vh;
-  &__details {
-    h4 {
-      font-size: 24px;
-      font-weight: 400;
-    }
-    .feature-list {
-      li {
-        padding-bottom: 20px;
-        color: var(--col-white);
-        font-size: 16px;
-      }
-    }
-  }
-  &__main {
+.login{
+    &__main{
+        &__loginbtn{
+            img{
+                width: 200px;
+            }
+        }
 
-    background: var(--col-white);
-
-    div {
-      width: fit-content;
     }
-  }
-}
-.mobile-main-logo{
-    height:clamp(40px,30vw,50px) ;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+    &__details{
+        height: 100vh;
+        background-color: rgba(192, 192, 192, 0.07);
+        img{
+            width: 200px;
+        }
+        .feature-list{
 
-.google-auth-btn {
-  color: var(--col-dark);
-  border: var(--col-dark) 1px solid;
-  border-radius: var(--u-base);
-  font-size: 14px;
-  font-weight: 500;
-  transition: ease-in-out 0.2s;
-  background: none !important;
-  img {
-    width: 18px;
-  }
-  &:hover {
-    background: var(--col-h-white) !important;
-  }
+            li{
+                color: var(--col-white);
+                margin-top: 12px;
+                font-weight: 200!important;
+            }
+        }
+
+    }
 }

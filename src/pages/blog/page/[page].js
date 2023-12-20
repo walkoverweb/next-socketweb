@@ -6,8 +6,7 @@ import config from "../../../components/lib/config";
 // import TagPostList from '@/components/tagPostList';
 import Head from "next/head";
 export default function Index({ posts, tags, pagination }) {
-  const url = "/blog";
-  const title = "All You Need to Know About Online Accounting Software by Giddh";
+  const title = "Unleash the Power of Seamless API Development";
   return (
     <>
       <Layout>

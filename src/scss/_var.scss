@@ -1,50 +1,43 @@
-:root {
-    --col-dark: #222222;
-    --col-white:#ffff;
-    --col-h-white:#e9e9e9;
-    --bs-heading-color:var(--col-white)!important;
-    --col-dark-lite:#a0a0a0!important;
-    // --heading: 48px;
-    // --sub-heading: 32px;
-    // --small-heading: 20px;
-  
-    // --c-fs-1: 32px;
-    // --c-fs-2: 28px;
-    // --c-fs-3: 24px;
-    // --c-fs-4: 20px;
-    // --c-fs-5: 16px;
-    // --c-fs-6: 14px;
-  
-    // --c-fw-400: 400;
-    // --c-fw-600: 600;
-  
-    // --col-primary: #1b1f6d;
-    // --col-grey: #343a40;
-    // --col-dark-light: #707070;
-    // --col-light: #f8f9fa;
-    // --col-blue: #4B55C2;
-    // --col-success: #28a745;
-    // --col-danger: #dc3545;
-    // --col-grey-deep: #6c757d;
-    // --col-light-gray: #e7e8ea 
+
+:root{
+    // font size
+    --fontsize-h1:64px;
+    --fontsize-h2:24px;
+    --fontsize-h3:26px;
+    --fontsize-h4:16px;
+    --fontsize-h5:10px;
 
 
-    //utilities
-    --u-base:2px;
+
+    --fontsize-base:14px;
+    --fontsize-base1:14px;
+    --fontsize-base2:14px;
+    --fontsize-base3:14px;
+
+    --c-fs-1: 32px;
+    --c-fs-2: 28px;
+    --c-fs-3: 24px;
+    --c-fs-4: 20px;
+    --c-fs-5: 16px;
+    --c-fs-6: 14px;
 
 
-    //font
-    --font-base:16px;
-
-
-    --head-base:var(--font-base);
+    // color
+    --col-primary : #0B4036;
     
-    --body-base:var(--font-base);
+
+    --col-black : #131313;
 
 
+    --col-white: #ffffff;
 
-    //height
-    --nav-height :30px
 
+    --col-link: #0d6efd;
+
+
+    //component color
+
+    --col-nav-bg:rgba(0, 0, 0, 0.185);
+    --col-nav-border: rgb(53, 53, 53);
 
 }

@@ -14,7 +14,9 @@
 
 // module.exports = nextConfig
 module.exports = {
-
+  images: {
+    unoptimized: true
+  },
   // Can be safely removed in newer versions of Next.js
   
     images: {
