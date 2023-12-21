@@ -2,6 +2,7 @@
     top: 10px !important;
     position: fixed !important;
     width: 100vw;
+    z-index: 9;
     
     
     .nav{
@@ -28,8 +29,6 @@
                 }
             }
         }
-       .menu {
-        stroke: white;
-       }
+       
     }
 }
