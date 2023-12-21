@@ -1,9 +1,9 @@
 const Embed = () => {
   return (
     <>
-      <div className="embed">
-        <div className="embed__hero container h-100 w-100 pt-5">
-          <div className="embed__hero__cont  col-12">
+      <div className="embed w-100 ">
+        <div className="embed__hero container h-100 w-100 px-0 pt-5">
+          <div className="embed__hero__cont  ">
             <div className="embed-hero-cont__heading my-2 ">
               <h1>The most advance <span className="d-inline-block position-relative tagnile-automation px-2 rounded-2">automation</span> tool ever built
               </h1>
@@ -13,8 +13,9 @@ const Embed = () => {
               functionality or write custom code using AI
             </h3> */}
             <div className="embed-hero-cont__btn d-flex align-items-center gap-3 my-3">
-              <button className="btn btn-light">Try for FREE</button>
-              <a className="btn btn-outline-light">Compare with other tools</a>
+              
+              <a class="btn btn-light" href="/login" role="button">Try for FREE</a>
+              {/* <a className="btn btn-outline-light">Compare with other tools</a> */}
             </div>
           </div>
           <div className="embed__hero__img my-5">
