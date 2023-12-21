@@ -4,10 +4,8 @@ const Embed = () => {
       <div className="embed">
         <div className="embed__hero container h-100 w-100">
           <div className="embed__hero__cont  col-12">
-            <div className="embed-hero-cont__heading ">
-              <h1>The most advance
-                {" "} <span className="tagnile-automation px-2 rounded-2">automation</span>{" "}
-                tool ever built
+            <div className="embed-hero-cont__heading my-2 ">
+              <h1>The most advance <span className="d-inline-block position-relative tagnile-automation px-2 rounded-2">automation</span> tool ever built
               </h1>
             </div>
             {/* <h3 className="embed-hero-cont__text">

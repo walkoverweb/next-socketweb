@@ -5,9 +5,22 @@
       min-width: 280px;
     }
   }
-}
-
-.tagnile-automation {
   
-  background: linear-gradient(91deg, #F6D0FF 21.95%, #9896FF 74.05%);
+  .tagnile-automation {
+    
+    &::before {
+      content: '';
+      background: linear-gradient(91deg, #F6D0FF 21.95%, #9896FF 74.05%);
+      width: 100%;
+      height:100%;
+      display: inline-block;
+      top: 5px;
+      position: absolute;
+      z-index: -1;
+      left: 0; 
+      border-radius: 6px;
+    }
+  }
 }
+    
+    
