@@ -1,39 +1,53 @@
+import { MdMenu } from "react-icons/md";
+
+
 const Navbar = () => {
   return (
     <>
-      <div className="navbar-cont">
-        <div className="nav container d-flex col-12 align-items-center justify-content-between my-3">
-          <a href="/">
-          <img className="nav__logo" src="/img/mainlogo.svg" alt="Via-Socket-logo" />
-          </a>
-          <div className="nav__menu">
-            <ul className="d-flex gap-4 align-items-center">
-              <li>
-                <a href="#" className="tabitems-nav px-1">
-                  Embed
-                </a>
-              </li>
-              <li>
-                <a href="#" className="tabitems-nav px-1">
-                  Flow
-                </a>
-              </li>
-              <li>
-                <a href="#" className="tabitems-nav px-1">
-                  Table
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="nav__buttons d-flex align-items-center gap-3">
-            <button className="btn btn-sm btn-light">Try for FREE</button>
-            <a href="/login" className="text-link px-1">
-              Login
+      <nav className="navbar navbar-cont navbar-expand-lg w-100">
+        <div className=" nav container d-flex align-items-center my-3">
+          <div>
+            <a href="#">
+              <img className="nav__logo navbar-brand" src="/img/mainlogo.svg" alt="Via-Socket-logo" />
             </a>
           </div>
-        </div>
-      </div>
+          {/* <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span className="navbar-toggler-icon menu"></span> 
+            <MdMenu className="fs-1 text-white" />
+          </button> */}
+
+          {/* <div className="navbar-collapse nav__menu" id="navbarSupportedContent">
+
+            <ul className="navbar-nav  gap- ms-auto d-flex">
+              <li className="nav-item">
+                <a className="nav-link active tabitems-nav" href="#">Embed</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link tabitems-nav" href="#">Flow</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link tabitems-nav" href="#">Table</a>
+              </li>
+            </ul> 
+            </div>
+            */}
+
+
+            <div className="nav__buttons d-flex gap-3 ms-auto">
+            <a className="btn btn-light" href="/login" role="button">Try for FREE</a>
+              <a className="btn btn-outline-light" href="/login" role="button">login</a>
+            </div>
+          </div>
+
+          
+          
+        
+      </nav>
     </>
   );
 };
 export default Navbar;
+
+
+
+

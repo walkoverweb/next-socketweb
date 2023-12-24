@@ -1,7 +1,10 @@
 .navbar-cont{
-    top: 10px;
-    position: fixed;
-    width: 100vw;
+    top: 10px !important;
+    position: fixed !important;
+    
+    z-index: 9;
+    
+    
     .nav{
         &__logo{
             height: 36px;
@@ -26,5 +29,6 @@
                 }
             }
         }
+       
     }
 }
