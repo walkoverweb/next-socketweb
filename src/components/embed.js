@@ -14,7 +14,7 @@ const Embed = () => {
             </h3> */}
             <div className="embed-hero-cont__btn d-flex align-items-center gap-3 my-3">
               
-              <a class="btn btn-light" href="/login" role="button">Try for FREE</a>
+              <a className="btn btn-light" href="/login" role="button">Try for FREE</a>
               {/* <a className="btn btn-outline-light">Compare with other tools</a> */}
             </div>
           </div>

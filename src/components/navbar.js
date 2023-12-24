@@ -34,7 +34,7 @@ const Navbar = () => {
 
 
             <div className="nav__buttons d-flex gap-3 ms-auto">
-            <a class="btn btn-light" href="/login" role="button">Try for FREE</a>
+            <a className="btn btn-light" href="/login" role="button">Try for FREE</a>
               <a className="btn btn-outline-light" href="/login" role="button">login</a>
             </div>
           </div>
