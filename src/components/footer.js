@@ -1,4 +1,5 @@
-const Footer = () => {
+import { useEffect } from "react";
+const Footer = () => {  
   return (
     <>
       <div className="container footer d-flex justify-content-between py-3">
@@ -21,6 +22,11 @@ const Footer = () => {
           <li>
             <a className="text-white" href="https://calendly.com/rpaliwal71/15-mins" target="_blank">
               Contact Us
+            </a>
+          </li>
+          <li>
+            <a className="text-white" href="https://viasocket.com/faq/pricing" target="_blank">
+            Pricing
             </a>
           </li>
         </ul>
