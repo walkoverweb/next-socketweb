@@ -57,18 +57,11 @@ const Navbar = () => {
             </ul> 
             </div>
          */}
-          <div className="nav__buttons d-flex gap-3 ms-auto">
-<<<<<<< HEAD
-          <button type="button" className="btn btn-dark">Talk to an expert
-          </button>
-            <a className="btn btn-light d-none d-lg-inline" href="/login" role="button">
-=======
-          <button type="button" className="btn btn-dark" onClick={openChatWidget}>Talk to an expert
-          </button>          
-            <a className="btn btn-light" href="/login" role="button">
->>>>>>> e7e7ff2e312fdfda492bcf9ce7e684bb20dabe86
-              Try for FREE
-            </a>
+          <div className="nav__buttons d-flex gap-3 ms-auto">          
+            <button type="button" className="btn btn-dark" onClick={openChatWidget}>Talk to an expert
+            </button>          
+            <a className="btn btn-light d-none d-lg-inline" href="/login" role="button"></a>
+            
             <a className="btn btn-outline-light" href="/login" role="button">
               login
             </a>
