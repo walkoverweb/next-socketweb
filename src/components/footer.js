@@ -1,4 +1,5 @@
-const Footer = () => {
+import { useEffect } from "react";
+const Footer = () => {  
   return (
     <>
       <div className="container footer d-flex justify-content-between py-3">
