@@ -1,6 +1,5 @@
 import { MdMenu } from "react-icons/md";
 
-
 const Navbar = () => {
   return (
     <>
@@ -8,7 +7,11 @@ const Navbar = () => {
         <div className=" nav container d-flex align-items-center my-3">
           <div>
             <a href="#">
-              <img className="nav__logo navbar-brand" src="/img/mainlogo.svg" alt="Via-Socket-logo" />
+              <img
+                className="nav__logo navbar-brand"
+                src="/img/mainlogo.svg"
+                alt="Via-Socket-logo"
+              />
             </a>
           </div>
           {/* <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,24 +33,20 @@ const Navbar = () => {
               </li>
             </ul> 
             </div>
-            */}
-
-
-            <div className="nav__buttons d-flex gap-3 ms-auto">
-            <a className="btn btn-light" href="/login" role="button">Try for FREE</a>
-              <a className="btn btn-outline-light" href="/login" role="button">login</a>
-            </div>
+         */}
+          <div className="nav__buttons d-flex gap-3 ms-auto">
+          <button type="button" class="btn btn-dark">Talk to an expert
+          </button>
+            <a className="btn btn-light" href="/login" role="button">
+              Try for FREE
+            </a>
+            <a className="btn btn-outline-light" href="/login" role="button">
+              login
+            </a>
           </div>
-
-          
-          
-        
+        </div>
       </nav>
     </>
   );
 };
 export default Navbar;
-
-
-
-
