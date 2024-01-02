@@ -35,9 +35,9 @@ const Navbar = () => {
             </div>
          */}
           <div className="nav__buttons d-flex gap-3 ms-auto">
-          <button type="button" class="btn btn-dark">Talk to an expert
+          <button type="button" className="btn btn-dark">Talk to an expert
           </button>
-            <a className="btn btn-light" href="/login" role="button">
+            <a className="btn btn-light d-none d-lg-inline" href="/login" role="button">
               Try for FREE
             </a>
             <a className="btn btn-outline-light" href="/login" role="button">
