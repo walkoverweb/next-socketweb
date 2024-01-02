@@ -1,13 +1,13 @@
 .embed {
   min-height: 100vh !important;
-  
-  &__hero__img{
-    img{
+
+  &__hero__img {
+    img {
       min-width: 280px;
       border: 1px solid var(--col-nav-border);
     }
   }
-  
+
   .tagnile-automation {
     background: -webkit-linear-gradient(45deg,(#cc5ce7 21.95%), (#5855d7 74.05%));
   -webkit-background-clip: text;
@@ -30,6 +30,10 @@
       font-weight: 500;
     }
   }
+
+  &__hero__cont {
+    h1 {
+      color: white; // Set the color to white
+    }
+  }
 }
-    
-    
