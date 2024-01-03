@@ -43,7 +43,7 @@ export default function TestPage({ source, title, date, author, tags }) {
       </Head>
       <div className="wrapper container blog-container">
         <a
-          className="mt-3 mb-3 d-inline-block btn blog-container__back-btn"
+          className="mt-5 mb-3 d-inline-block btn blog-container__back-btn"
           href="#"
           onClick={handleClick}
         >
@@ -53,7 +53,7 @@ export default function TestPage({ source, title, date, author, tags }) {
           <div className="date">
             {author}, {date}
           </div>
-          <h1>{title}</h1>
+          <h1 className="title-main">{title}</h1>
           {/* {thumbnailImage !=="" && <img className="" src={thumbnailImage} alt={author} />} */}
         </div>
         <div className="body">
