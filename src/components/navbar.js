@@ -33,7 +33,7 @@ const Navbar = () => {
       <nav className="navbar navbar-cont navbar-expand-lg w-100">
         <div className=" nav container d-flex align-items-center my-3">
           <div>
-            <a href="#">
+            <a href="/">
               <img
                 className="nav__logo navbar-brand"
                 src="/img/mainlogo.svg"
@@ -63,8 +63,8 @@ const Navbar = () => {
          */}
           <div className="nav__buttons d-flex gap-3 ms-auto">
          
-          <a className="text-white btn btn-dark" href="https://viasocket.com/faq/pricing" target="_blank">
-            Pricing
+            <a className="text-white btn btn-dark" href="https://viasocket.com/faq/pricing" target="_blank">
+              Pricing
             </a>         
             <a className="btn btn-light d-none d-lg-inline" href="/login" role="button">Sign Up</a>
             <a className="btn btn-outline-light" href="/login" role="button">
