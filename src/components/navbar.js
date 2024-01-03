@@ -61,12 +61,20 @@ const Navbar = () => {
             </ul> 
             </div>
          */}
+<<<<<<< HEAD
           <div className="nav__buttons d-flex gap-3 ms-auto">
          
           <a className="text-white btn btn-dark" href="https://viasocket.com/faq/pricing" target="_blank">
             Pricing
             </a>         
             <a className="btn btn-light d-none d-lg-inline" href="/login" role="button">Sign Up</a>
+=======
+          <div className="nav__buttons d-flex gap-3 ms-auto">          
+            <button type="button" className="btn btn-dark" onClick={openChatWidget}>Talk to an expert
+            </button>          
+            <a className="btn btn-light d-none d-lg-inline" href="/login" role="button">Try for FREE</a>
+            
+>>>>>>> b7397e9886883b7d29ebe00abe8f77240e930535
             <a className="btn btn-outline-light" href="/login" role="button">
               Login
             </a>
