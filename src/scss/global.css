@@ -20,7 +20,7 @@
   --col-black: #131313;
   --col-white: #ffffff;
   --col-link: #0d6efd;
-  --col-nav-bg:rgba(255, 245, 245, 0);
+  --col-nav-bg:rgba(0, 0, 0, 0.449);
   --col-nav-border: rgb(53, 53, 53);
 }
 
@@ -29,18 +29,29 @@
 }
 .embed__hero__img img {
   min-width: 280px;
+  border: 1px solid var(--col-nav-border);
+}
+.embed .tagnile-automation {
+  background: -webkit-linear-gradient(45deg, #cc5ce7 21.95%, #5855d7 74.05%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .embed .tagnile-automation::before {
-  content: "";
-  background: linear-gradient(91deg, #F6D0FF 21.95%, #9896FF 74.05%);
-  width: 100%;
-  height: 100%;
+  content: url(../../public/img/automation-logo.svg);
   display: inline-block;
-  top: 5px;
   position: absolute;
   z-index: -1;
-  left: 0;
-  border-radius: 6px;
+  right: -44px;
+  top: 2px;
+}
+.embed .embed__hero__cont .btn-light {
+  font-weight: 500;
+}
+.embed .chat {
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  background: rgb(26, 98, 34);
 }
 
 h1,
@@ -48,7 +59,7 @@ h2,
 h3,
 h4,
 h5,
-
+span,
 p {
   color: white !important;
 }
@@ -137,7 +148,7 @@ a {
 .navbar-cont {
   top: 10px !important;
   position: fixed !important;
-  width: 100vw;
+  z-index: 9;
 }
 .navbar-cont .nav {
   border: 1px solid var(--col-nav-border);
@@ -157,8 +168,13 @@ a {
   color: var(--col-white) !important;
   text-decoration: underline !important;
 }
-.navbar-cont .nav .menu {
-  stroke: white;
+.navbar-cont .nav__buttons .btn-dark {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+.navbar-cont .nav__buttons .btn-dark:hover {
+  background-color: rgba(255, 255, 255, 0.137);
 }
 
 .blog {
@@ -396,4 +412,14 @@ body::-webkit-scrollbar-thumb {
 }
 .nav-padding {
   padding-top: 100px;
+}
+
+body button.chat-button {
+  border: 6px solid red !important;
+}
+body button.chat-button::after {
+  content: "Hello Via Socket....";
+  position: absolute;
+  top: 50px;
+  display: inline-block;
 }/*# sourceMappingURL=global.css.map */

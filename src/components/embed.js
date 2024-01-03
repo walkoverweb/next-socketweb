@@ -24,9 +24,9 @@ const Embed = () => {
           <div className="embed__hero__img my-5">
             <img className="img-fluid rounded-1" width="100%" src="/img/main.svg" />
           </div>
+          <span className="chat text-white px-5 py-2 rounded-4">Talk to an Expert.....</span>
         </div>
       </div>
-
     </>
   );
 };
