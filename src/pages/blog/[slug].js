@@ -2,6 +2,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import * as fs from "fs";
 import { fetchPostContent } from "../../components/lib/posts";
+import { useEffect } from "react";
 import yaml from "js-yaml";
 import matter from "gray-matter";
 import Head from "next/head";
@@ -29,12 +30,18 @@ const slugToPostContent = ((postContents) => {
   return hash;
 })(fetchPostContent());
 
-export default function TestPage({ source, title, date, author, tags }) {
+export default function TestPage({ source, title, date, author, tags , thumbnailImage}) {
   const router = useRouter();
 
   const handleClick = () => {
     router.back();
   };
+  useEffect(() => {
+    document.body.classList.add("custom-background-color");
+    return () => {
+      document.body.classList.remove("custom-background-color");
+    };
+  }, []);
   return (
     <>
       <Head>
@@ -42,19 +49,24 @@ export default function TestPage({ source, title, date, author, tags }) {
         {/* <meta property="og:title" content={`Explore the world of ${title} Through our blog and stay informed about the latest developments, expert insights, and valuable tips that matter most. visit at GIDHH -The Best Accounting Software`} key="title" /> */}
       </Head>
       <div className="wrapper container blog-container">
-        <a
-          className="mt-5 mb-3 d-inline-block btn blog-container__back-btn"
+        {/* <a
+          className="mt-5 d-inline-block btn blog-container__back-btn"
           href="#"
           onClick={handleClick}
         >
           <MdKeyboardArrowLeft /> Back
-        </a>
-        <div className="blog-header mt-4">
-          <div className="date">
+        </a> */}
+        <div className="blog-header header-content mt-4">
+          <a href="https://viasocket.com/blog"><MdKeyboardArrowLeft /> Blog</a>
+          <div className="date mt-2">
             {author}, {date}
           </div>
-          <h1 className="title-main">{title}</h1>
-          {/* {thumbnailImage !=="" && <img className="" src={thumbnailImage} alt={author} />} */}
+          <div className="d-flex gap-5">
+          <h1 className="title-main me-2">{title}</h1>
+          <div className="img-div">
+          {thumbnailImage !=="" && <img className="img-class" src={thumbnailImage} alt={author} />}
+          </div>
+          </div>
         </div>
         <div className="body">
           <MDXRemote {...source} components={component} />
@@ -107,6 +119,7 @@ export async function getStaticProps(slug) {
   var date = new Date(matterResult?.data?.date);
   date = format(date, "LLLL d, yyyy");
   const tags = matterResult?.data?.tag;
+  const thumbnailImage = matterResult?.data?.thumbnail;
   const mdxSource = await serialize(content);
 
   return {
@@ -116,6 +129,7 @@ export async function getStaticProps(slug) {
       title: title || "",
       author: author || "",
       tags: tags || "",
+      thumbnailImage: thumbnailImage || "",
     },
   };
 }
