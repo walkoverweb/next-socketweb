@@ -24,11 +24,6 @@ const Footer = () => {
               Contact Us
             </a>
           </li>
-          <li>
-            <a className="text-white" href="https://viasocket.com/faq/pricing" target="_blank">
-            Pricing
-            </a>
-          </li>
         </ul>
         <div className="d-flex align-items-center pe-2 copyright">
           <span>Copyright 2023 &copy;</span>

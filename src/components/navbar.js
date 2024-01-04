@@ -1,22 +1,22 @@
 import { MdMenu } from "react-icons/md";
 import { useEffect } from "react";
 const Navbar = () => {
+
+  
   useEffect(() => {
     const helloConfig = {
-      widgetToken: "a13cc",
-      hide_launcher: true
-      // Add your configuration here
+      widgetToken: "a13cc"      
     };
 
     const script = document.createElement('script');
     script.src = "https://control.msg91.com/app/assets/widget/chat-widget.js";
-    script.async = true;
-    script.onload = () => initChatWidget(helloConfig, 5000);
+    //script.async = true;
+    script.onload = () => initChatWidget(helloConfig, 50);
 
-    document.body.appendChild(script);
+    document.head.appendChild(script);
 
     return () => {
-      document.body.removeChild(script);
+      document.head.removeChild(script);
     }
   }, []);
 
@@ -29,7 +29,7 @@ const Navbar = () => {
       <nav className="navbar navbar-cont navbar-expand-lg w-100">
         <div className=" nav container d-flex align-items-center my-3">
           <div>
-            <a href="#">
+            <a href="/">
               <img
                 className="nav__logo navbar-brand"
                 src="/img/mainlogo.svg"
@@ -57,13 +57,14 @@ const Navbar = () => {
             </ul> 
             </div>
          */}
-          <div className="nav__buttons d-flex gap-3 ms-auto">          
-            <button type="button" className="btn btn-dark" onClick={openChatWidget}>Talk to an expert
-            </button>          
-            <a className="btn btn-light d-none d-lg-inline" href="/login" role="button">Try for FREE</a>
-            
+          <div className="nav__buttons d-flex gap-3 ms-auto">
+         
+            <a className="text-white btn btn-dark" href="https://viasocket.com/faq/pricing" target="_blank">
+              Pricing
+            </a>         
+            <a className="btn btn-light d-none d-lg-inline" href="/login" role="button">Sign Up</a>
             <a className="btn btn-outline-light" href="/login" role="button">
-              login
+              Login
             </a>
           </div>
         </div>

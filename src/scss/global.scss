@@ -36,3 +36,23 @@ body {
 .nav-padding {
 	padding-top: 100px;
 }
+
+// 
+
+body{
+
+	
+		button{
+			&.chat-button{
+				border: 6px solid red !important;
+				&::after{
+					content: 'Hello Via Socket....';
+					position: absolute;
+					top: 50px;
+					display: inline-block;
+				}
+			}
+		}
+	
+}
+
