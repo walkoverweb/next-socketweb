@@ -36,23 +36,11 @@ body {
 .nav-padding {
 	padding-top: 100px;
 }
-
-// 
-
-body{
-
-	
-		button{
-			&.chat-button{
-				border: 6px solid red !important;
-				&::after{
-					content: 'Hello Via Socket....';
-					position: absolute;
-					top: 50px;
-					display: inline-block;
-				}
-			}
-		}
-	
-}
-
+body.custom-background-color {
+	// background: #7BA8CE;
+	// background: #3D678A;
+	// background: #33566E;
+	background: #000000eb;
+	animation: none; /* Remove the gradient animation */
+	/* Additional styles */
+  }

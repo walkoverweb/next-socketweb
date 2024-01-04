@@ -2,6 +2,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import { MDXRemote } from "next-mdx-remote";
 import * as fs from "fs";
 import { fetchPostContent } from "../../components/lib/posts";
+import { useEffect } from "react";
 import yaml from "js-yaml";
 import matter from "gray-matter";
 import Head from "next/head";
@@ -29,62 +30,104 @@ const slugToPostContent = ((postContents) => {
   return hash;
 })(fetchPostContent());
 
-export default function TestPage({ source, title, date, author, tags }) {
+export default function TestPage({
+  source,
+  title,
+  date,
+  author,
+  tags,
+  thumbnailImage,
+}) {
   const router = useRouter();
 
   const handleClick = () => {
     router.back();
   };
+  useEffect(() => {
+    document.body.classList.add("custom-background-color");
+    return () => {
+      document.body.classList.remove("custom-background-color");
+    };
+  }, []);
   return (
     <>
       <Head>
         <title>{title}</title>
         {/* <meta property="og:title" content={`Explore the world of ${title} Through our blog and stay informed about the latest developments, expert insights, and valuable tips that matter most. visit at GIDHH -The Best Accounting Software`} key="title" /> */}
       </Head>
-      <div className="wrapper container blog-container">
-        <a
-          className="mt-5 mb-3 d-inline-block btn blog-container__back-btn"
+
+      <div className="container-fluid px-0">
+        <div className="blog-container">
+          {/* <a
+          className="mt-5 d-inline-block btn blog-container__back-btn"
           href="#"
           onClick={handleClick}
         >
           <MdKeyboardArrowLeft /> Back
-        </a>
-        <div className="blog-header mt-4">
-          <div className="date">
-            {author}, {date}
-          </div>
-          <h1 className="title-main">{title}</h1>
-          {/* {thumbnailImage !=="" && <img className="" src={thumbnailImage} alt={author} />} */}
-        </div>
-        <div className="body">
-          <MDXRemote {...source} components={component} />
-        </div>
+        </a> */}
+          <div className="container pb-4">
+            <div className="blog-header header-content mt-2">
+              <a className="text-white" href="https://viasocket.com/blog">
+                <MdKeyboardArrowLeft /> Blog
+              </a>
+              <div className="date mt-2">
+                {author}, {date}
+              </div>
+              <div className="row">
+              <div className="col-lg-6 col-12">
 
-        <footer className="pt-3">
-          <div className="blog-card-tags">
-            <ul className="blog-page-tags d-flex gap-3 ps-0 mb-1">
-              {tags !== "" &&
-                tags?.map((it, i) => (
-                  <li key={i}>
-                    <TagButton tag={getTag(it)} />
-                  </li>
-                ))}
-            </ul>
+                <h1 className="title-main me-2">{title}</h1>
+              </div>
+              <div className="col-lg-6 col-12">
+
+                <div className="img-div">
+                  {thumbnailImage !== "" && (
+                    <img
+                      className="img-class"
+                      src={thumbnailImage}
+                      alt={author}
+                    />
+                  )}
+                </div>
+              </div>
+
+              </div>
+            </div>
           </div>
-          <button
-            className="btn blog-container__back-btn mt-3"
-            onClick={handleClick}
-          >
-            <MdKeyboardArrowLeft /> Back
-          </button>
-        </footer>
+          <div className="container-fluid bg-white px-0 py-5">
+          <div className="d-flex mx-auto flex-column blob-body-container justify-content-center px-0">
+
+            <div className="body">
+              <MDXRemote {...source} components={component} />
+            </div>
+
+            <footer className="pt-3">
+              <div className="blog-card-tags">
+                <ul className="blog-page-tags d-flex gap-3 ps-0 mb-1">
+                  {tags !== "" &&
+                    tags?.map((it, i) => (
+                      <li key={i}>
+                        <TagButton tag={getTag(it)} />
+                      </li>
+                    ))}
+                </ul>
+              </div>
+              <button
+                className="btn blog-container__back-btn mt-3"
+                onClick={handleClick}
+              >
+                <MdKeyboardArrowLeft /> Back
+              </button>
+            </footer>
+          </div>
+          </div>
+        </div>
       </div>
     </>
   );
 }
 
 export async function getStaticPaths() {
-
   const paths = fetchPostContent().map((it) => "/blog/" + it.staticPath);
 
   return {
@@ -107,6 +150,7 @@ export async function getStaticProps(slug) {
   var date = new Date(matterResult?.data?.date);
   date = format(date, "LLLL d, yyyy");
   const tags = matterResult?.data?.tag;
+  const thumbnailImage = matterResult?.data?.thumbnail;
   const mdxSource = await serialize(content);
 
   return {
@@ -116,6 +160,7 @@ export async function getStaticProps(slug) {
       title: title || "",
       author: author || "",
       tags: tags || "",
+      thumbnailImage: thumbnailImage || "",
     },
   };
 }
