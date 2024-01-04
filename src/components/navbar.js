@@ -5,22 +5,18 @@ const Navbar = () => {
   
   useEffect(() => {
     const helloConfig = {
-      widgetToken: "a13cc",
-      
-      // Add your configuration here
+      widgetToken: "a13cc"      
     };
 
     const script = document.createElement('script');
     script.src = "https://control.msg91.com/app/assets/widget/chat-widget.js";
-    script.async = true;
-    script.onload = () => initChatWidget(helloConfig, 5000);
+    //script.async = true;
+    script.onload = () => initChatWidget(helloConfig, 50);
 
-    document.body.appendChild(script);
-
-   
+    document.head.appendChild(script);
 
     return () => {
-      document.body.removeChild(script);
+      document.head.removeChild(script);
     }
   }, []);
 
